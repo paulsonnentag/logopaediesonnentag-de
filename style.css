@@ -9,6 +9,7 @@ body, html {
 }
 
 .Background {
+    background-color: #7c7c7c;
     background: url('./background.jpg');
     position: fixed;
     top: 0;
