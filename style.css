@@ -9,7 +9,7 @@ body, html {
 }
 
 .Background {
-    background: url('./background.jpg');
+    background: url('background.jpg');
     background-color: #7c7c7c;
     position: fixed;
     top: 0;
@@ -21,8 +21,14 @@ body, html {
 }
 
 .Grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -31,10 +37,20 @@ body, html {
     min-height: 700px;
     min-width: 500px;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
@@ -60,7 +76,7 @@ body, html {
 }
 
 .Logo__image {
-    background: url('./logo.png');
+    background: url('logo.png');
     float: left;
     width: 50px;
     height: 100px;
