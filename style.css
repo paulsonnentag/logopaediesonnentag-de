@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.Background {
+    background: url('./background.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-filter: grayscale(100%) contrast(25%);
+}
+
+.Grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Grid__half {
+    width: 50%;
+    min-height: 700px;
+    min-width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.Grid__half--shaded {
+    background: #fff;
+}
+
+.Hero {
+    margin: 30px;
+    max-width: 550px;
+}
+
+.Hero__title {
+    border-bottom: 2px solid #ffe945;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.Logo {
+    color: #fff;
+    width: 250px;
+    height: 150px;
+}
+
+.Logo__image {
+    background: url('./logo.png');
+    float: left;
+    width: 50px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.Logo__title, .Logo__subtitle {
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.Logo__title {
+    font-weight: bold;
+}
+
+.Logo__subtitle {
+    font-weight: normal;
+}
+
+.InfoBox {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+}
+
+a {
+    color: #edb901;
+}
