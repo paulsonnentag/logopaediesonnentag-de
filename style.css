@@ -35,7 +35,7 @@ body, html {
 .Grid__half {
     width: 50%;
     min-height: 700px;
-    min-width: 300px;
+    min-width: 400px;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -60,7 +60,9 @@ body, html {
 
 .Hero {
     margin: 30px;
-    max-width: 550px;
+    max-width: 800px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .Hero__title {
@@ -108,3 +110,9 @@ body, html {
 a {
     color: #edb901;
 }
+
+.OpeningTimes {
+    width: 250px;
+}
+
+
